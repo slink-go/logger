@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+// region - global logger
+
 // https://www.honeybadger.io/blog/golang-logging/
 // https://github.com/op/go-logging/blob/master/examples/example.go
 var log *logging.Logger
@@ -82,3 +84,5 @@ func Fatal(message string, args ...interface{}) {
 		log.Fatalf(message+"\r", args...)
 	}
 }
+
+// endregion
